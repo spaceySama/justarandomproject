@@ -1,0 +1,165 @@
+// written in turbo cpp
+#include<iostream.h>
+#include<fstream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int x=0;
+	char ch1[100],ch2;
+ifstream fin;
+	ofstream fout;
+	cout<<"        Guest Enter Your Name: ";
+	cin>>ch1;
+	clrscr();
+	cout<<"        Welcome "<<ch1<<" to Place Space!";
+	cout<<"A quiz on places. Enter answer in form of 'a', 'b' and 'c' only.";
+	cout<<endl;
+	fin.open("question.txt", ios::in);
+	fout.open("score.txt", ios::out|ios::app);
+	fout<<endl<<ch1<<endl;
+	fin.getline(ch1,100,':');
+	cout<<ch1<<endl;
+	cout<<"\n Enter your choice: ";
+	cin>>ch2;
+	if(ch2=='a')
+	{
+		x=x+10;
+		cout<<"Good Job.Your score is "<<x;
+	}
+	else
+		cout<<"Sorry wrong answer. The correct answer is a. ";
+	getch();
+	clrscr();
+	fin.getline(ch1,100,':');
+	cout<<ch1<<endl;
+	cout<<"\n Enter your choice: ";
+	cin>>ch2;
+	if(ch2=='c')
+	{
+		x=x+10;
+		cout<<"Good Job.Your score is "<<x;
+	}
+	else
+		cout<<"Sorry wrong answer. The correct answer is c. ";
+	getch();
+	clrscr();
+	fin.getline(ch1,100,':');
+	cout<<ch1<<endl;
+	cout<<"\n Enter your choice: ";
+	cin>>ch2;
+	if(ch2=='b')
+	{
+		x=x+10;
+		cout<<"Good Job.Your score is "<<x;
+	}
+	else
+		cout<<"Sorry wrong answer. The correct answer is b.";
+	getch();
+	clrscr();
+	fin.getline(ch1,100,':');
+	cout<<ch1<<endl;
+	cout<<"\n Enter your choice: ";
+	cin>>ch2;
+	if(ch2=='b')
+	{
+		x=x+10;
+		cout<<"Your score is "<<x;
+	}
+	else
+		cout<<"Sorry wrong answer. The correct answer is b.";
+	getch();
+	clrscr();
+	fin.getline(ch1,100,':');
+	cout<<ch1<<endl;
+	cout<<"\n Enter your choice: ";
+	cin>>ch2;
+	if(ch2=='a')
+	{
+		x=x+10;
+		cout<<"Your score is "<<x;
+	}
+	else
+	cout<<"Sorry wrong answer. The correct answer is a.";
+	getch();
+	clrscr();
+	fin.getline(ch1,100,':');
+	cout<<ch1<<endl;
+	cout<<"\n Enter your choice: ";
+	cin>>ch2;
+	if(ch2=='a')
+	{
+		x=x+10;
+		cout<<"Your score is "<<x;
+	}
+	else
+		cout<<"Sorry wrong answer. The correct answer is a.";
+	getch();
+	clrscr();
+	fin.getline(ch1,100,':');
+	cout<<ch1<<endl;
+	cout<<"\n Enter your choice: ";
+	cin>>ch2;
+	if(ch2=='c')
+	{
+		x=x+10;
+		cout<<"Your score is "<<x;
+	}
+	else
+		cout<<"Sorry wrong answer. The correct answer is c.";
+	getch();
+	clrscr();
+	fin.getline(ch1,100,':');
+	cout<<ch1<<endl;
+	cout<<"\n Enter your choice: ";
+	cin>>ch2;
+	if(ch2=='b')
+	{
+		x=x+10;
+		cout<<"Your score is "<<x;
+	}
+	else
+		cout<<"Sorry wrong answer. The correct answer is b.";
+	getch();
+	clrscr();
+	fin.getline(ch1,100,':');
+	cout<<ch1<<endl;
+	cout<<"\n Enter your choice: ";
+	cin>>ch2;
+	if(ch2=='a')
+	{
+		x=x+10;
+		cout<<"Your score is "<<x;
+	}
+	else
+		cout<<"Sorry wrong answer. The correct answer is a.";
+	getch();
+	clrscr();
+	fin.getline(ch1,100,':');
+	cout<<ch1<<endl;
+	cout<<"\n Enter your choice: ";
+	cin>>ch2;
+	if(ch2=='c')
+	{
+		x=x+10;
+		cout<<"Your score is "<<x;
+	}
+	else
+		cout<<"Sorry wrong answer. The correct answer is c.";
+	getch();
+	clrscr();
+	if(x==100)
+		cout<<"No cheating. You have done this earlier also.";
+	if(x==90)
+		cout<<"You are extremely intelligent. Your Score is 90.";
+	if(x==80)
+		cout<<"You are intelligent. Your Score is 80.";
+	if(50==x||x==70||x==60)
+		cout<<" You are average. Score: "<<x<<<< "\n Maybe next time";
+	else if(x<=40)
+		cout<<"No use. Not even 5 questions right";
+	getch();
+	fout<<x<<endl;
+	fin.close();
+	fout.close();
+}
